@@ -10,3 +10,52 @@ body {
     font-family: "Poppins", sans-serif;
 }
 /* ----------------------------------------------- */
+
+/* Banner Start */
+.banner{
+    position: relative;
+}
+.banner img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.banner .logo img{
+    width: 80px;
+    height: auto;
+    position: absolute;
+    top: 1rem;
+    left: 5%;
+}
+.banner .banner-content{
+    position: absolute;
+    bottom: 1rem;
+    left: 5%;
+}
+.banner .banner-content h1{
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 300;
+    font-size: calc(2rem + 0.5vw);
+    margin: 0;
+}
+
+/* For small screens */
+@media screen and (max-width: 768px) {
+    .banner img {
+        height: auto;
+    }
+    .banner .logo img{
+        width: 60px;
+        top: 1rem;
+        left: 1rem;
+    }
+    .banner .banner-content{
+        bottom: 0.2rem;
+        left: 1rem;
+    }
+    .banner .banner-content h1{
+        font-size: calc(1.3rem + 0.5vw);
+    }
+}
+/* Banner End */
