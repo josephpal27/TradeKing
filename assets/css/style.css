@@ -59,3 +59,31 @@ body {
     }
 }
 /* Banner End */
+
+/* Wave Banner Start */
+.wave-banner{
+    position: relative;
+}
+.wave-banner img{
+    width: 100%;
+}
+.wave-banner .signup-text{
+    position: absolute;
+    top: 1rem;
+    left: 5%;
+}
+.wave-banner .signup-text p{
+    color: #d6d6d6;
+    width: 50%;
+}
+.wave-banner .signup-text button{
+    margin-top: 1rem;
+    padding: 0.5rem 2rem;
+    border-radius: 50px;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #c2c2c2;
+    box-shadow: rgb(1, 6, 84) 1px 5px 8px;
+    margin-right: 1rem;
+}
+/* Wave Banner End */
