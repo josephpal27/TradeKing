@@ -173,3 +173,105 @@ body {
     }
 }
 /* Wave Banner End */
+
+/* Why Choose Us Start */
+.why-choose-us{
+    padding: 1rem 5% 21rem 5%;
+    background-color: #0c031b;
+    position: relative;
+}
+.why-choose-us h2{
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 300;
+    font-size: calc(2rem + 0.5vw);
+    margin: 0;
+}
+.why-choose-us h2 b{
+    font-weight: 600;
+}
+.choose-us-card-row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+.choose-us-card-row .choose-us-card{
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    width: 33%;
+}
+.choose-us-card-row .choose-us-card h3{
+    color: rgb(109, 109, 109);
+    font-weight: 200;
+    font-size: calc(2rem + 0.5vw);
+    margin: 0;
+}
+.choose-us-card-row .choose-us-card h4{
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    font-size: calc(1.1rem + 0.5vw);
+    margin: 0;
+    margin-top: 2.2rem;
+}
+.choose-us-card-row .choose-us-card p{
+    color: #d6d6d6;
+    font-size: calc(0.55rem + 0.5vw);
+    margin-top: 0.7rem;
+}
+
+.blur-effect img{
+    position: absolute;
+}
+.blur-effect #blur-1{
+    top: -22rem;
+    left: 0;
+    width: 250px;
+}
+.blur-effect #blur-2{
+    top: 10%;
+    right: 0;
+    width: 200px;
+}
+
+/* For small screens */
+@media screen and (max-width: 767px) {
+    .why-choose-us{
+        padding: 1rem 1rem 6rem 1rem;
+    }
+    .why-choose-us h2{
+        font-size: calc(1.2rem + 0.5vw);
+    }
+    .choose-us-card-row{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2.5rem;
+    }
+    .choose-us-card-row .choose-us-card{
+        gap: 0.5rem;
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+    .choose-us-card-row .choose-us-card h3{
+        font-size: calc(1.7rem + 0.5vw);
+    }
+    .choose-us-card-row .choose-us-card h4{
+        font-size: calc(0.9rem + 0.5vw);
+        margin-top: 2.2rem;
+    }
+    .choose-us-card-row .choose-us-card p{
+        font-size: calc(0.6rem + 0.5vw);
+        margin-top: 0.5rem;
+    }
+
+    .blur-effect #blur-1{
+        top: -11rem;
+        width: 130px;
+    }
+    .blur-effect #blur-2{
+        top: 16%;
+        width: 170px;
+    }
+}
+/* Why Choose Us End */
