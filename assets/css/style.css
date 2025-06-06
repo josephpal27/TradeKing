@@ -41,7 +41,7 @@ body {
 }
 
 /* For small screens */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .banner img {
         height: auto;
     }
@@ -55,7 +55,7 @@ body {
         left: 1rem;
     }
     .banner .banner-content h1{
-        font-size: calc(1.3rem + 0.5vw);
+        font-size: calc(1.2rem + 0.5vw);
     }
 }
 /* Banner End */
@@ -63,6 +63,7 @@ body {
 /* Wave Banner Start */
 .wave-banner{
     position: relative;
+    overflow: hidden;
 }
 .wave-banner img{
     width: 100%;
@@ -84,6 +85,7 @@ body {
     border-radius: 50px;
     color: #fff;
     background-color: transparent;
+    backdrop-filter: blur(5px);
     box-shadow: 0 0 10px #002b74;
     border-top: 2px solid #dfdfdf;
     border-bottom: 2px solid #727272;
@@ -98,5 +100,76 @@ body {
     border-bottom: 2px solid #d3d3d3;
     border-right: 1px solid #d3d3d3;
     border-left: 1px solid #7f7f7f;
+}
+
+.wave-banner-content{
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    bottom: -10rem;
+    display: flex;
+    justify-content: space-between;
+}
+.wave-banner-content .content-text{
+    width: 47%;
+}
+.wave-banner-content .content-text h2{
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 300;
+    font-size: calc(2rem + 0.5vw);
+    margin: 0;
+    margin-top: 6rem;
+}
+.wave-banner-content .content-text p{
+    color: #fff;
+    font-size: calc(0.55rem + 0.5vw);
+    margin-top: 1.9rem;
+    width: 80%;
+}
+.wave-banner-content .content-image{
+    width: 50%;
+}
+.wave-banner-content .content-image img{
+    width: 100%;
+}
+
+/* For small screens */
+@media screen and (max-width: 767px) {
+    .wave-banner .signup-text{
+        top: 0.3rem;
+        left: 1rem;
+    }
+    .wave-banner .signup-text p{
+        width: 75%;
+        font-size: calc(0.6rem + 0.5vw);
+    }
+    .wave-banner .signup-text button{
+        font-size: calc(0.65rem + 0.5vw);
+        margin-top: 0.1rem;
+        padding: 0.35rem 1.6rem;
+        margin-right: 0.5rem;
+    }
+
+    .wave-banner-content{
+        left: 1rem;
+        right: 1rem;
+        bottom: -1.5rem;
+    }
+    .wave-banner-content .content-text{
+        width: 63%;
+    }
+    .wave-banner-content .content-text h2{
+        font-size: calc(1.2rem + 0.5vw);
+        margin-top: 0;
+    }
+    .wave-banner-content .content-text p{
+        font-size: calc(0.55rem + 0.5vw);
+        margin-top: 0.5rem;
+        width: 100%;
+    }
+    .wave-banner-content .content-image{
+        width: 35%;
+    }
 }
 /* Wave Banner End */
