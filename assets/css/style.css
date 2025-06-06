@@ -74,16 +74,29 @@ body {
 }
 .wave-banner .signup-text p{
     color: #d6d6d6;
-    width: 50%;
+    width: 45%;
+    font-size: calc(0.55rem + 0.5vw);
 }
 .wave-banner .signup-text button{
+    font-size: calc(0.6rem + 0.5vw);
     margin-top: 1rem;
     padding: 0.5rem 2rem;
     border-radius: 50px;
     color: #fff;
     background-color: transparent;
-    border: 2px solid #c2c2c2;
-    box-shadow: rgb(1, 6, 84) 1px 5px 8px;
+    box-shadow: 0 0 10px #002b74;
+    border-top: 2px solid #dfdfdf;
+    border-bottom: 2px solid #727272;
+    border-right: 1px solid #727272;
+    border-left: 1px solid #dfdfdf;
     margin-right: 1rem;
+    transition: all 0.5s ease;
+}
+.wave-banner .signup-text button:hover{
+    box-shadow: 0 0 13px #003898;
+    border-top: 2px solid #7f7f7f;
+    border-bottom: 2px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+    border-left: 1px solid #7f7f7f;
 }
 /* Wave Banner End */
