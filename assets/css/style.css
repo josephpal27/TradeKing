@@ -176,8 +176,9 @@ body {
 
 /* Why Choose Us Start */
 .why-choose-us{
-    padding: 1rem 5% 21rem 5%;
-    background-color: #0c031b;
+    padding: 1rem 5% 0 5%;
+    /* background-color: #0c031b; */
+    background: linear-gradient(to bottom, #0c031b 0%, #0d0325 110%);
     position: relative;
 }
 .why-choose-us h2{
@@ -238,7 +239,7 @@ body {
 /* For small screens */
 @media screen and (max-width: 767px) {
     .why-choose-us{
-        padding: 1rem 1rem 6rem 1rem;
+        padding: 1rem 1rem 0 1rem;
     }
     .why-choose-us h2{
         font-size: calc(1.2rem + 0.5vw);
@@ -275,3 +276,9 @@ body {
     }
 }
 /* Why Choose Us End */
+
+/* Investment Options Start */
+.investment img{
+    width: 100%;
+}
+/* Investment Options End */
