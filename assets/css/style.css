@@ -224,6 +224,7 @@ body {
 
 .blur-effect img{
     position: absolute;
+    z-index: 10;
 }
 .blur-effect #blur-1{
     top: -22rem;
@@ -254,6 +255,9 @@ body {
         width: 90%;
         margin-bottom: 1rem;
     }
+    .choose-us-card-row .choose-us-card:last-child{
+        margin-bottom: 0;
+    }
     .choose-us-card-row .choose-us-card h3{
         font-size: calc(1.7rem + 0.5vw);
     }
@@ -264,6 +268,9 @@ body {
     .choose-us-card-row .choose-us-card p{
         font-size: calc(0.6rem + 0.5vw);
         margin-top: 0.5rem;
+    }
+    .choose-us-card-row .choose-us-card:last-child p{
+        margin-bottom: 0;
     }
 
     .blur-effect #blur-1{
@@ -278,7 +285,144 @@ body {
 /* Why Choose Us End */
 
 /* Investment Options Start */
+.investment{
+    position: relative;
+    background-color: #0a0227;
+    padding-bottom: 105vh;
+}
 .investment img{
     width: 100%;
+}
+.investment #blur-3{
+    width: 300px;
+    position: absolute;
+    top: 35rem;
+    left: 0;
+}
+.investment-content{
+    position: absolute;
+    top: 30rem;
+    width: 100%;
+    padding: 0 5%;
+}
+.investment-content h2{
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 300;
+    font-size: calc(2rem + 0.5vw);
+    margin: 0;
+}
+
+.investment-card-row{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 2%;
+    margin-top: 4rem;
+}
+.investment-card-row .investment-card{
+    width: 32%;
+    position: relative;
+    margin-bottom: 3rem;
+}
+.investment-card-row .investment-card h3{
+    position: absolute;
+    top: -10px;
+    left: -15px;
+    color: rgb(109, 109, 109);
+    font-weight: 200;
+    font-size: calc(2rem + 0.5vw);
+    margin: 0;
+}
+.investment-card-row .investment-card-content{
+    position: absolute;
+    top: 4.5rem;
+    left: 3rem;
+}
+.investment-card-row .investment-card-content h4{
+    color: #fff;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: calc(1rem + 0.5vw);
+    margin: 0;
+}
+.investment-card-row .investment-card-content p{
+    color: #e1e1e1;
+    font-size: calc(0.45rem + 0.5vw);
+    margin: 0;
+    margin-top: 0.5rem;
+    width: 85%;
+}
+.investment-card-row .investment-card-content button{
+    font-size: calc(0.35rem + 0.5vw);
+    margin-top: 1rem;
+    padding: 0.2rem 1rem;
+    border-radius: 50px;
+    color: #fff;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 9px #002b74;
+    border-top: 2px solid #dfdfdf;
+    border-bottom: 2px solid #727272;
+    border-right: 1px solid #727272;
+    border-left: 1px solid #dfdfdf;
+    transition: all 0.5s ease;
+    margin-left: 24.5%;
+}
+.investment-card-row .investment-card-content button:hover{
+    box-shadow: 0 0 11px #003898;
+    border-top: 2px solid #7f7f7f;
+    border-bottom: 2px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+    border-left: 1px solid #7f7f7f;
+}
+
+/* For small screens */
+@media screen and (max-width: 767px) {
+    .investment{
+        padding-bottom: 280vh;
+    }
+    .investment #blur-3{
+        width: 150px;
+        top: 15.5rem;
+    }
+    .investment-content{
+        top: 10rem;
+        padding: 0 1rem;
+    }
+    .investment-content h2{
+        font-size: calc(1.2rem + 0.5vw);
+    }
+
+    .investment-card-row{
+        margin-top: 4.5rem;
+        padding: 0 2rem;
+    }
+    .investment-card-row .investment-card{
+        width: 100%;
+        margin-bottom: 2.2rem;
+    }
+    .investment-card-row .investment-card h3{
+        font-weight: 300;
+        font-size: calc(1.7rem + 0.5vw);
+    }
+    .investment-card-row .investment-card-content{
+        top: 3rem;
+        left: 3rem;
+    }
+    .investment-card-row .investment-card-content h4{
+        font-size: calc(1rem + 0.5vw);
+    }
+    .investment-card-row .investment-card-content p{
+        font-size: calc(0.5rem + 0.5vw);
+        margin-top: 0.4rem;
+    }
+    .investment-card-row .investment-card-content button{
+        font-size: calc(0.5rem + 0.5vw);
+        margin-top: 0.5rem;
+        padding: 0.25rem 0.8rem;
+        margin-left: 0;
+    }
+
 }
 /* Investment Options End */
