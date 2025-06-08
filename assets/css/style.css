@@ -24,8 +24,8 @@ body {
     width: 80px;
     height: auto;
     position: absolute;
-    top: 1rem;
-    left: 5%;
+    top: 2rem;
+    right: 4%;
 }
 .banner .banner-content{
     position: absolute;
@@ -48,7 +48,7 @@ body {
     .banner .logo img{
         width: 60px;
         top: 1rem;
-        left: 1rem;
+        right: 1rem;
     }
     .banner .banner-content{
         bottom: 0.2rem;
@@ -287,8 +287,6 @@ body {
 /* Investment Options Start */
 .investment{
     position: relative;
-    background-color: #0a0227;
-    padding-bottom: 105vh;
 }
 .investment img{
     width: 100%;
@@ -299,31 +297,34 @@ body {
     top: 35rem;
     left: 0;
 }
-.investment-content{
-    position: absolute;
-    top: 30rem;
-    width: 100%;
-    padding: 0 5%;
-}
-.investment-content h2{
+.investment h2{
     text-transform: uppercase;
     color: #fff;
     font-weight: 300;
     font-size: calc(2rem + 0.5vw);
     margin: 0;
+    position: absolute;
+    top: 26rem;
+    left: 5%;
 }
-
+.investment-content{
+    background-color: #0a0227;
+    padding: 0 5%;
+    margin-top: -28rem;
+}
 .investment-card-row{
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
     gap: 2%;
-    margin-top: 4rem;
 }
 .investment-card-row .investment-card{
     width: 32%;
     position: relative;
     margin-bottom: 3rem;
+}
+.investment-card-row .investment-card img{
+    width: 100%;
 }
 .investment-card-row .investment-card h3{
     position: absolute;
@@ -377,25 +378,51 @@ body {
     border-left: 1px solid #7f7f7f;
 }
 
+/* For 110% in 15 inch screens */
+@media screen and (min-width: 1230px) and (max-width: 1399px){
+    .investment h2{
+        top: 29.5rem;
+    }
+    .investment-content{
+        margin-top: -31.5rem;
+    }
+    .investment-card-row .investment-card-content{
+        top: 5.7rem;
+        left: 3.3rem;
+    }
+}
+
+/* For 100% in 15 inch screens */
+@media screen and (min-width: 1400px) {
+    .investment h2{
+        top: 32.7rem;
+    }
+    .investment-content{
+        margin-top: -34.5rem;
+    }
+    .investment-card-row .investment-card-content{
+        top: 6.7rem;
+        left: 3.5rem;
+    }
+}
+
 /* For small screens */
 @media screen and (max-width: 767px) {
-    .investment{
-        padding-bottom: 280vh;
-    }
     .investment #blur-3{
         width: 150px;
         top: 15.5rem;
     }
-    .investment-content{
-        top: 10rem;
-        padding: 0 1rem;
-    }
-    .investment-content h2{
+    .investment h2{
         font-size: calc(1.2rem + 0.5vw);
+        top: 12rem;
+        left: 1rem;
+    }
+    .investment-content{
+        padding: 0 1rem;
+        margin-top: -1rem;
     }
 
     .investment-card-row{
-        margin-top: 4.5rem;
         padding: 0 2rem;
     }
     .investment-card-row .investment-card{
@@ -423,6 +450,150 @@ body {
         padding: 0.25rem 0.8rem;
         margin-left: 0;
     }
+}
 
+@media screen and (min-width: 361px) and (max-width: 380px){
+    .investment h2{
+        top: 12rem;
+    }
+    .investment-content{
+        margin-top: -1.7rem;
+    }
+    .investment-card-row .investment-card-content{
+        top: 3.4rem;
+    }
+}
+
+@media screen and (min-width: 381px) and (max-width: 400px){
+    .investment h2{
+        top: 12.5rem;
+    }
+    .investment-content{
+        margin-top: -2rem;
+    }
+    .investment-card-row .investment-card-content{
+        top: 3.8rem;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 420px){
+    .investment h2{
+        top: 13.2rem;
+    }
+    .investment #blur-3{
+        width: 180px;
+        top: 17.5rem;
+    }
+    .investment-content{
+        margin-top: -2rem;
+    }
+    .investment-card-row .investment-card-content{
+        top: 4.4rem;
+    }
+    .investment-card-row .investment-card{
+        margin-bottom: 2.4rem;
+    }
+}
+
+@media screen and (min-width: 421px) and (max-width: 440px){
+    .investment h2{
+        top: 13.5rem;
+    }
+    .investment #blur-3{
+        width: 190px;
+        top: 18rem;
+    }
+    .investment-content{
+        margin-top: -2.3rem;
+    }
+    .investment-card-row .investment-card-content{
+        top: 4.7rem;
+    }
+    .investment-card-row .investment-card{
+        margin-bottom: 2.5rem;
+    }
+    .investment-card-row .investment-card h3{
+        font-size: calc(1.75rem + 0.5vw);
+    }
+    .investment-card-row .investment-card-content h4{
+        font-size: calc(1.15rem + 0.5vw);
+    }
+    .investment-card-row .investment-card-content p{
+        font-size: calc(0.55rem + 0.5vw);
+        margin-top: 0.5rem;
+    }
+    .investment-card-row .investment-card-content button{
+        font-size: calc(0.55rem + 0.5vw);
+        margin-top: 0.6rem;
+        padding: 0.32rem 0.85rem;
+    }
+}
+
+@media screen and (min-width: 441px) and (max-width: 470px){
+    .investment h2{
+        top: 14.2rem;
+    }
+    .investment #blur-3{
+        width: 210px;
+        top: 19rem;
+    }
+    .investment-content{
+        margin-top: -2.3rem;
+    }
+    .investment-card-row .investment-card-content{
+        top: 5.2rem;
+    }
+    .investment-card-row .investment-card{
+        margin-bottom: 2.7rem;
+    }
+    .investment-card-row .investment-card h3{
+        font-size: calc(1.75rem + 0.5vw);
+    }
+    .investment-card-row .investment-card-content h4{
+        font-size: calc(1.15rem + 0.5vw);
+    }
+    .investment-card-row .investment-card-content p{
+        font-size: calc(0.55rem + 0.5vw);
+        margin-top: 0.5rem;
+    }
+    .investment-card-row .investment-card-content button{
+        font-size: calc(0.55rem + 0.5vw);
+        margin-top: 0.6rem;
+        padding: 0.32rem 0.85rem;
+    }
+}
+
+@media screen and (min-width: 470px) and (max-width: 500px){
+    .investment h2{
+        top: 14.7rem;
+    }
+    .investment #blur-3{
+        width: 210px;
+        top: 21rem;
+    }
+    .investment-content{
+        margin-top: -2.7rem;
+    }
+    .investment-card-row .investment-card-content{
+        top: 6rem;
+    }
+    .investment-card-row .investment-card{
+        margin-bottom: 2.9rem;
+    }
+    .investment-card-row .investment-card h3{
+        font-size: calc(1.75rem + 0.5vw);
+    }
+    .investment-card-row .investment-card-content h4{
+        font-size: calc(1.15rem + 0.5vw);
+    }
+    .investment-card-row .investment-card-content p{
+        font-size: calc(0.55rem + 0.5vw);
+        margin-top: 0.5rem;
+    }
+    .investment-card-row .investment-card-content button{
+        font-size: calc(0.55rem + 0.5vw);
+        margin-top: 0.6rem;
+        padding: 0.32rem 0.85rem;
+    }
 }
 /* Investment Options End */
