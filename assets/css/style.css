@@ -177,7 +177,6 @@ body {
 /* Why Choose Us Start */
 .why-choose-us{
     padding: 1rem 5% 0 5%;
-    /* background-color: #0c031b; */
     background: linear-gradient(to bottom, #0c031b 0%, #0d0325 110%);
     position: relative;
 }
@@ -309,6 +308,7 @@ body {
 }
 .investment-content{
     background-color: #0a0227;
+    background: linear-gradient(to bottom, #0a0227 70%, #0f031e 100%);
     padding: 0 5%;
     margin-top: -28rem;
 }
@@ -597,3 +597,302 @@ body {
     }
 }
 /* Investment Options End */
+
+/* Tips & Tricks Start */
+.tips-tricks{
+    padding: 3rem 5% 0 5%;
+    background: linear-gradient(to bottom, #0f031e 0%, #0b031b 140%);
+}
+.tips-tricks h2{
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 300;
+    font-size: calc(2rem + 0.5vw);
+    margin: 0;
+}
+.tips-tricks-row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.tips-tricks-card{
+    width: 48%;
+}
+.tips-tricks-card h3{
+    color: rgb(109, 109, 109);
+    font-weight: 200;
+    font-size: calc(2rem + 0.5vw);
+    margin: 0;
+}
+.tips-tricks-card h4{
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    font-size: calc(1.1rem + 0.5vw);
+    margin: 0;
+    margin-top: 1rem;
+}
+.tips-tricks-card p{
+    color: #d6d6d6;
+    font-size: calc(0.55rem + 0.5vw);
+    margin: 0;
+    margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 767px){
+    .tips-tricks{
+        padding: 2rem 1rem 0 1rem;
+    }
+    .tips-tricks h2{
+        font-size: calc(1.2rem + 0.5vw);
+    }
+    .tips-tricks-row{
+        margin-top: 1.7rem;
+    }
+    .tips-tricks-card h3{
+        font-size: calc(1.7rem + 0.5vw);
+    }
+    .tips-tricks-card h4{
+        font-size: calc(0.9rem + 0.5vw);
+        margin-top: 0.7rem;
+    }
+    .tips-tricks-card p{
+        font-size: calc(0.5rem + 0.5vw);
+        margin-top: 0.4rem;
+    }
+}
+
+@media screen and (min-width: 420px) and (max-width: 450px){
+    .tips-tricks-card p{
+        font-size: calc(0.54rem + 0.5vw);
+    }
+}
+/* Tips & Tricks End */
+
+/* Telegram Start */
+.telegram{
+    overflow: hidden;
+    position: relative;
+}
+.telegram img{
+    width: 100%;
+    margin-top: -3rem;
+}
+.telegram .tel-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 5rem;
+}
+.telegram .tel-btn button{
+    font-size: calc(0.6rem + 0.5vw);
+    padding: 0.6rem 2rem;
+    border-radius: 50px;
+    color: #fff;
+    background: linear-gradient(to right, #170c34 40%, #0f081d 140%);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px #002b74;
+    border-top: 2px solid #dfdfdf;
+    border-bottom: 2px solid #727272;
+    border-right: 1px solid #727272;
+    border-left: 1px solid #dfdfdf;
+    transition: all 0.5s ease;
+}
+.telegram .tel-btn button:hover{
+    background: linear-gradient(to right, #0f081d 10%, #170c34 70%);
+    box-shadow: 0 0 13px #003898;
+    border-top: 2px solid #7f7f7f;
+    border-bottom: 2px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+    border-left: 1px solid #7f7f7f;
+}
+
+@media screen and (max-width: 767px){
+    .telegram img{
+        margin-top: -0.7rem;
+    }
+    .telegram .tel-btn{
+        top: 1.2rem;
+    }
+    .telegram .tel-btn button{
+        font-size: calc(0.55rem + 0.5vw);
+        padding: 0.5rem 1rem;
+        font-weight: 500;
+    }
+}
+
+@media screen and (min-width: 380px) and (max-width: 420px){
+    .telegram .tel-btn{
+        top: 1.6rem;
+    }
+}
+
+@media screen and (min-width: 421px) and (max-width: 470px){
+    .telegram .tel-btn{
+        top: 2rem;
+    }
+}
+/* Telegram End */
+
+/* Count Row Start */
+.count-row{
+    padding: 0 5% 1rem 5%;
+    background: linear-gradient(to right, #0c0322 20%, #0b0416 140%);
+    display: flex;
+    justify-content: space-between;
+}
+.count-row .count-box{
+    width: 32.5%;
+    text-align: center;
+}
+.count-row .count-box h2{
+    color: #fff;
+    font-weight: 600;
+    font-size: calc(2rem + 0.5vw);
+    margin: 0;
+}
+.count-row .count-box p{
+    color: #d6d6d6;
+    font-size: calc(0.55rem + 0.5vw);
+    margin: 0;
+    margin-top: 0.7rem;
+}
+
+@media screen and (max-width: 767px){
+    .count-row{
+        padding: 0 1rem 1rem 1rem;
+    }
+    .count-row .count-box h2{
+        font-size: calc(1.2rem + 0.5vw);
+    }
+    .count-row .count-box p{
+        font-size: calc(0.54rem + 0.5vw);
+        margin-top: 0.5rem;
+    }
+}
+/* Count Row End */
+
+/* Contact Start */
+.contact{
+    padding: 4.5rem 5% 6rem 5%;
+    background: linear-gradient(to right, #0c0322 20%, #0b0416 140%);
+}
+.contact h2{
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 300;
+    font-size: calc(2rem + 0.5vw);
+    margin: 0;
+}
+.contact form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    width: 50%;
+    margin-left: 25%;
+}
+.contact form input{
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-size: calc(0.8rem + 0.5vw);
+    color: #fff;
+    background: linear-gradient(to right, #0e042a 10%, #07030f 100%);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px #002b74;
+    border-top: 2px solid #dfdfdf;
+    border-bottom: 2px solid #727272;
+    border-right: 1px solid #727272;
+    border-left: 1px solid #dfdfdf;
+    outline: none;
+    transition: all 0.5s ease;
+}
+.contact form input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+.contact form input:focus{
+    background: linear-gradient(to right, #07030f 10%, #0e042a 100%);
+    box-shadow: 0 0 13px #003898;
+    border-top: 2px solid #7f7f7f;
+    border-bottom: 2px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+    border-left: 1px solid #7f7f7f;
+}
+.contact form input:hover{
+    box-shadow: 0 0 13px #003898;
+    border-top: 2px solid #7f7f7f;
+    border-bottom: 2px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+    border-left: 1px solid #7f7f7f;
+}
+.contact button{
+    font-size: calc(0.6rem + 0.5vw);
+    padding: 0.6rem 2.5rem;
+    border-radius: 50px;
+    color: #fff;
+    background: linear-gradient(to right, #0e042a 10%, #07030f 100%);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px #002b74;
+    border-top: 2px solid #dfdfdf;
+    border-bottom: 2px solid #727272;
+    border-right: 1px solid #727272;
+    border-left: 1px solid #dfdfdf;
+    transition: all 0.5s ease;
+}
+.contact button:hover{
+    background: linear-gradient(to right, #07030f 10%, #0e042a 100%);
+    box-shadow: 0 0 13px #003898;
+    border-top: 2px solid #7f7f7f;
+    border-bottom: 2px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+    border-left: 1px solid #7f7f7f;
+}
+
+@media screen and (max-width: 767px){
+    .contact{
+        padding: 2.7rem 1rem 4rem 1rem;
+    }
+    .contact h2{
+        font-size: calc(1.2rem + 0.5vw);
+    }
+    .contact form{
+        margin-top: 1.8rem;
+        width: 96%;
+        margin-left: 2%;
+    }
+    .contact form input{
+        margin-bottom: 1.3rem;
+        padding: 0.8rem 2rem;
+        font-size: calc(0.75rem + 0.5vw);
+    }
+    .contact button{
+        font-size: calc(0.7rem + 0.5vw);
+        padding: 0.4rem 1.6rem;
+    }
+}
+/* Contact End */
+
+/* Footer Start */
+footer{
+    text-align: center;
+    background-color: #000;
+    padding: 0.5rem 0;
+}
+footer p{
+    margin: 0;
+    font-size: calc(0.35rem + 0.5vw);
+    color: #fff;
+}
+
+@media screen and (max-width: 767px){
+    footer{
+        padding: 0.45rem 0;
+    }
+    footer p{
+        font-size: calc(0.4rem + 0.5vw);
+    }
+}
+/* Footer End */
