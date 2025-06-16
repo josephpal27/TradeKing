@@ -1,7 +1,7 @@
 .wave-banner-content{
     position: absolute;
     left: 5%;
-    right: 0;
+    right: 5%;
     bottom: 12rem;
 }
 
@@ -9,16 +9,16 @@
 @media screen and (max-width: 767px) {
     .wave-banner-content{
         left: 1rem;
-        right: 0;
+        right: 1rem;
         bottom: 1.5rem;
     }
     .wave-banner-content .content-text{
-        width: 90%;
+        width: 100%;
     }
     /* .wave-banner-content .content-image{
-        width: 52%;
+        width: 40%;
         position: absolute;
-        top: -7.5rem;
+        top: -5rem;
         right: 0;
     } */
 }
@@ -26,16 +26,16 @@
 @media screen and (min-width: 400px) and (max-width: 767px){
     .wave-banner-content{
         left: 1rem;
-        right: 0;
+        right: 1rem;
         bottom: 4rem;
     }
     .wave-banner-content .content-text{
         width: 90%;
     }
     /* .wave-banner-content .content-image{
-        width: 55%;
+        width: 31.5%;
         position: absolute;
-        top: -9rem;
+        top: -7rem;
         right: 0;
     } */
 }
